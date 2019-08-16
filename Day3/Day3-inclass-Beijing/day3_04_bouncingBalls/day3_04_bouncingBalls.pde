@@ -1,13 +1,30 @@
 float x, y;
 float xSpd, ySpd;
 
+float x1, y1;
+float xSpd1, ySpd1;
+
+float x2, y2;
+float xSpd2, ySpd2;
+
 void setup() {
   size(500, 600);
   background(0);
+  
   x = width/2;
   y = height/2;
   xSpd = random(-5, 5);
   ySpd = random(-5, 5);
+  
+  x1 = width/2;
+  y1 = height/2;
+  xSpd1 = random(-5, 5);
+  ySpd1 = random(-5, 5);
+  
+  x2 = width/2;
+  y2 = height/2;
+  xSpd2 = random(-5, 5);
+  ySpd2 = random(-5, 5);
 }
 
 
@@ -29,7 +46,34 @@ void draw() {
   }
   
   ellipse(x, y, 80, 80);
-  //flower(x, y, 0.5, 72, 3.0);
+  
+  
+  x1 += xSpd1;
+  y1 += ySpd1;
+  
+  if (x1 < 0 || x1 > width) {
+    xSpd1 = -xSpd1;
+    // xSpd *= -1; xSpd = xSpd * -1;
+  }
+  if (y1 < 0 || y1 > height) {
+    ySpd1 = -ySpd1;
+  }
+  
+  ellipse(x1, y1, 80, 80);
+  
+  
+  x2 += xSpd2;  // x = x + xSpd;
+  y2 += ySpd2;  // y = y + ySpd;
+  
+  if (x2 < 0 || x2 > width) {
+    xSpd2 = -xSpd2;
+    // xSpd *= -1; xSpd = xSpd * -1;
+  }
+  if (y2 < 0 || y2 > height) {
+    ySpd2 = -ySpd2;
+  }
+  
+  ellipse(x2, y2, 80, 80);
 }
 
 

@@ -75,7 +75,7 @@ void draw() {
   
   noStroke();
   fill(0, 255, 0);
-  ellipse(trackY, trackY, 10, 10);
+  ellipse(trackX, trackY, 10, 10);
   
   
 

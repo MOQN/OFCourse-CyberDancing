@@ -1,4 +1,4 @@
-int totalNumber = 100;
+int totalNumber = 300;
 float[] x = new float[totalNumber];
 float[] y = new float[totalNumber];
 float[] xSpd = new float[totalNumber];

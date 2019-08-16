@@ -7,7 +7,7 @@ void setup() {
   
   // Add! Remove! -- These are possible because we are using ArrayList
   
-  int totalNumber = 100;
+  int totalNumber = 150;
   for (int i=0; i<totalNumber; i++) {
     fireworks.add( new Particle(width/2, height) );
   }
@@ -88,7 +88,7 @@ class Particle {
     int strength = 8;
     xSpd = random(-strength, strength);
     ySpd = random(-strength, strength);
-    lifeReduction = random(0.01, 0.03);
+    lifeReduction = random(0.005, 0.020);
     isExploded = true;
   }
   void slowDown() {

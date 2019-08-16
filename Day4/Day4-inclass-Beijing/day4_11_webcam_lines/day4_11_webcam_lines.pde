@@ -16,7 +16,8 @@ void draw() {
   }
   background(0);
   noFill();
-  int resolution = 20;
+  stroke(255);
+  int resolution = 15;
   cam.loadPixels();
   for (int y = 0; y < cam.height; y += resolution) {
     beginShape();

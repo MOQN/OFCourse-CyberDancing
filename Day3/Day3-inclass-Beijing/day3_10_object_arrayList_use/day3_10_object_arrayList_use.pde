@@ -58,10 +58,10 @@ class Particle {
     rotate(frameCount * rotSpeed);
     
     noStroke();
-    //fill(r,g,b);
-    noFill();
+    fill(r,g,b);
+    //noFill();
     stroke(255, 20);
-    //ellipse(x, y, size, size);
+    ellipse(x, y, size, size);
     rectMode(CENTER);
     rect(0, 0,size, size);
     
